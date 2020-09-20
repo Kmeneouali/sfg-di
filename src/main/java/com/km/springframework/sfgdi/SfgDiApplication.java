@@ -16,6 +16,8 @@ public class SfgDiApplication {
 		ApplicationContext ctx=SpringApplication.run(SfgDiApplication.class, args);
 		MyController myController= (MyController) ctx.getBean("myController");
 
+		System.out.println("------- Primary ");
+
 		System.out.println(myController.sayHello());
 
 
